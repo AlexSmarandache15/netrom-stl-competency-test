@@ -122,7 +122,7 @@ std::tuple<std::string, int, int> placeEvent(std::vector<std::vector<bool>>& cal
 
 	if (day_event) {
 		int temp = start_event - 9;
-		while (temp < (start_event -9 + event.getDuration())) {
+		while (temp < (start_event - 9 + event.getDuration())) {
 			calendar[day_event - 1][temp] = true;
 			temp++;
 		}
