@@ -65,7 +65,7 @@ void readInputFromFile(std::vector<std::vector<bool>>& calendar, std::multiset<U
 
 bool solveA(const std::vector<std::vector<bool>>& calendar, const UnplannedEvent& event) {
 	int day_counter = 0;
-	for (const auto day : calendar) {
+	for (const auto& day : calendar) {
 		int start = 0, current = 0;
 		day_counter++;
 		for (auto it = std::begin(day); it != std::end(day); it++) {
