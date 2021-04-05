@@ -77,14 +77,14 @@ bool solveA(const std::vector<std::vector<bool>>& calendar, const UnplannedEvent
 			}
 			else {
 				if (current >= event.getDuration()) {
-					std::cout << "a) " << day_counter << " " << start << '\n';
+					std::cout << day_counter << " " << start << '\n';
 					return true;
 				}
 				current = 0;
 			}
 		}
 		if (current >= event.getDuration()) {
-			std::cout << "a) " << day_counter << " " << start << '\n';
+			std::cout << day_counter << " " << start << '\n';
 			return true;
 		}
 	}
